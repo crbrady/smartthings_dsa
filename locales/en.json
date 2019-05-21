@@ -1,0 +1,9 @@
+{
+	"pages.mainPage.name": "Pacific Device Config",
+	"pages.mainPage.sections.sensors.name": "Office Motion",
+	"pages.mainPage.settings.contactSensor.name": "Select motion sensor",
+	"pages.mainPage.sections.lights.name": "Turn on and off these lights and switches",
+	"pages.mainPage.settings.lights.name": "Select lights and switches",
+	"Tap to set": "Tap to set",
+	"pages.mainPage.settings.motionSensor.name": "pages.mainPage.settings.motionSensor.name"
+}
