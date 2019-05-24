@@ -11,6 +11,7 @@
   "dependencies": {
     "@smartthings/smartapp": "^1.2.2",
     "cron": "^1.7.1",
+    "dslink": "^1.2.1",
     "express": "^4.16.4",
     "smartthings-node": "0.0.4"
   }

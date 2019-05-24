@@ -1,0 +1,28 @@
+{
+  "name": "SmartThings-",
+  "version": "1.0.1",
+  "description": "Phizzles DSA SmartThings Poller",
+  "main": "poller.js",
+  "engines": {
+    "node": ">=6.1"
+  },
+  "getDependencies": [
+    "node install.js"
+  ],
+  "configs": {
+    "broker": {
+      "type": "url"
+    },
+    "name": {
+      "type": "string",
+      "default": "SmartThings"
+    },
+    "log": {
+      "type": "enum",
+      "default": "info"
+    },
+    "token": {
+      "type": "string"
+    }
+  }
+}

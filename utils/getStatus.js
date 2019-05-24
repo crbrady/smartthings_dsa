@@ -2,76 +2,76 @@ module.exports = {
     kitchenLights: async function (ctx) {
         let devices = ctx.config.devices;
 
-        const task1 = ctx.reqTools.GetDevice(ctx, devices.kitchen_can1);
-        const task2 = ctx.reqTools.GetDevice(ctx, devices.kitchen_can2);
-        const task3 = ctx.reqTools.GetDevice(ctx, devices.kitchen_can3);
-        const task4 = ctx.reqTools.GetDevice(ctx, devices.kitchen_can4);
+        const task1 = ctx.reqTools.GetDevice(ctx, devices.kitchenCan1);
+        const task2 = ctx.reqTools.GetDevice(ctx, devices.kitchenCan2);
+        const task3 = ctx.reqTools.GetDevice(ctx, devices.kitchenCan3);
+        const task4 = ctx.reqTools.GetDevice(ctx, devices.kitchenCan4);
 
         return {
-            kitchen_can1: await task1,
-            kitchen_can2: await task2,
-            kitchen_can3: await task3,
-            kitchen_can4: await task4
+            kitchenCan1: await task1,
+            kitchenCan2: await task2,
+            kitchenCan3: await task3,
+            kitchenCan4: await task4
         }
     },
     hallDimmer: async function (ctx) {
-        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.hall_dimmer);
+        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.hallDimmer);
         return {
             hallDimmer: await task1
         }
     },
     hallMotion: async function (ctx) {
-        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.hall_motion);
+        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.hallMotion);
         return {
-            hallMimmer: await task1
+            hallMotion: await task1
         }
     },
     hallThermostat: async function (ctx) {
-        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.hall_thermostat);
+        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.hallThermostat);
         return {
-            hallThermo: await task1
+            hallThermostat: await task1
         }
     },
     officeTri: async function (ctx) {
-        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.office_tri_sensor);
+        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.officeTriSensor);
         return {
             officeTri: await task1
         }
     },
     officeWallSwitch: async function (ctx) {
-        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.office_wall_switch);
+        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.officeWallSwitch);
         return {
-            hall_dimmer: await task1
+            officeWallSwitch: await task1
         }
     },
     masterClosetDimmer: async function (ctx) {
-        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.master_closet_dimmer);
+        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.masterClosetDimmer);
         return {
-            hall_dimmer: await task1
+            masterClosetDimmer: await task1
         }
     },
     laundryLeak: async function (ctx) {
-        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.laundry_leak_sensor);
+        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.laundryLeakSensor);
         return {
             laundryLeak: await task1
         }
     },
     georgeSwitch: async function (ctx) {
-        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.george_switch);
+        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.georgeSwitch);
         return {
-            george_switch: await task1
+            georgeSwitch: await task1
         }
     },
     ryanPhone: async function (ctx) {
-        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.ryans_phone);
+        const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.ryanPhone);
         return {
-            ryan_phone: await task1
+            ryanPhone: await task1
         }
     },
     button: async function (ctx) {
         const task1 = ctx.reqTools.GetDevice(ctx, ctx.config.devices.button);
         return {
-            hall_dimmer: await task1
+            hallDimmer: await task1
         }
     }
 };

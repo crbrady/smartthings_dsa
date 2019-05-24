@@ -43,6 +43,7 @@ module.exports = {
     samsungMotion: function(deviceStatus) {
         console.log(deviceStatus.components.main);
         return {
+            motion: deviceStatus.components.main.motionSensor.motion.value
             //switch: deviceStatus.components.main.switch.switch.value,
         };
     },
